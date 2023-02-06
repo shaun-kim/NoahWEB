@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="kor">
+
 <head>
     <meta charset="UTF-8">
     <title>노아</title>
@@ -12,6 +13,7 @@
         background-color: yellowgreen;
 
     }
+
     .container {
         background-color: coral;
         display: flex;
@@ -19,6 +21,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .header_wrap {
         background-color: lightgray;
         height: 450px;
@@ -28,7 +31,9 @@
         align-items: left;
     }
 
-    .header_wrap, main, footer{
+    .header_wrap,
+    main,
+    footer {
         width: 100%;
         margin-top: 10px;
     }
@@ -38,6 +43,7 @@
         background-color: lightsalmon;
         width: 30%;
     }
+
     nav {
         background-color: lightpink;
         width: 70%;
@@ -56,7 +62,7 @@
         height: 300px;
     }
 
-    header > .logoTitle {
+    header>.logoTitle {
         font-family: millettre, sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -64,51 +70,61 @@
         text-align: center;
     }
 </style>
+
 <body>
-<!--여기부터 머리말/메뉴입니다.-->
-<div class="container">
-    <div class="header_wrap">
-        <header>
-            <img src="logovol1r1.svg" alt="노아패밀리 로고입니다." width="300px">
-            <!-- <h1 class="logoTitle">Noah Family</h1> -->
-            <nav>
-                <p>SIGN-IN</p>
-                <p>INTRO</p>
+    <!--여기부터 머리말/메뉴입니다.-->
+    <header>
+        <img src="logovol1r1.svg" alt="노아패밀리 로고입니다." width="300px">
+        <p>Branding by Shaun Kim</p>
+        <nav>
+            <ul id="introList">
                 <li>ABOUT US</li>
-                <li>Branding by Shaun Kim</li>
-                <p>PRODUCT</p>
-                <li>WOOD</li>
-                <li>FABRIC</li>
-                <li>STEAL</li>
+                <li>INSTAGRAM</li>
+                <li>FACEBOOK</li>
+            </ul>
+            <ul id="membershipList">
+                <li>SIGN-IN</li>
+                <li>MY ACCOUNT</li>
+                <li>REGISTER</li>
+                <li>ORDER TRACKING</li>
+            </ul>
+            <ul id="productList">
+                <li>from WOOD</li>
+                <li>from FABRIC</li>
+                <li>from STEAL</li>
                 <li>CANDEL</li>
                 <li>LIGHT</li>
-                <li>Etc..</li>
-                <p>NOTICE</p>
-                <p>CART</p>
-                <P>COMMUNITY</P>
-                <P>Q&A</P>
-            </nav>
-        </header>
-    </div>
-
+            </ul>
+            <ul id="csList">
+                <li>NOTICE</li>
+                <li>COMMUNITY</li>
+                <li>Q&A</li>
+            </ul>
+            <ul>
+                <li>cart</li>
+                <li>I've watched</li>
+            </ul>
+        </nav>
+    </header>
     <!--여기부터 메인 아티클입니다.-->
     <main>
-        <article>#article</article>
-        <article>#article</article>
-        <article>#article</article>
-        <article>#article</article>
-        <article>#article</article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
     </main>
     <!--여기는 꼬리말입니다.-->
     <footer>
-        <h5>COMPANY INFO</h5>
-        <p>CEO: 김인희</p>
-        <p>E-mail: shaunkim98@gmail.com</p>
-        <p>Cell: 010-xxxx-xxxx</p>
-        <p>Address: 경기도</p>
-        <p>Business License</p>
-        <p>Copyright all right reserved/ design by Shaun Kim</p>
+        <ul id="businessInfo">
+            <li>COMPANY INFO</li>
+            <li>CEO: 김인희</li>
+            <li>E-mail: shaunkim98@gmail.com</li>
+            <li>Cell: 010-xxxx-xxxx</li>
+            <li>Address: 경기도</li>
+            <li>Business License</li>
+            <li>Copyright all right reserved/ design by Shaun Kim</li>
+        </ul>
     </footer>
-</div>
 </body>
 </html>
