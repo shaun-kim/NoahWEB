@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <title>노아</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--    viewport 반응형웹-->
+    <link rel="stylesheet" href="https://use.typekit.net/dzy0ihr.css">
+</head>
+<style>
+    /*레이아웃을 구성합니다.*/
+    body {
+        background-color: yellowgreen;
+
+    }
+    .container {
+        background-color: coral;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_wrap {
+        background-color: lightgray;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .header_wrap, main, footer{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header {
+        display: block;
+        background-color: lightsalmon;
+        width: 30%;
+    }
+    nav {
+        background-color: lightpink;
+        width: 70%;
+        height: 450px;
+    }
+
+    main {
+        background-color: lightblue;
+        height: 700px;
+    }
+
+    footer {
+        display: block;
+        background-color: yellow;
+        text-align: center;
+        height: 300px;
+    }
+
+    header > .logoTitle {
+        font-family: millettre, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+<!--여기부터 머리말/메뉴입니다.-->
+<div class="container">
+    <div class="header_wrap">
+        <header>
+            <img src="logovol1r1.svg" alt="노아패밀리 로고입니다." width="300px">
+            <!-- <h1 class="logoTitle">Noah Family</h1> -->
+            <nav>
+                <p>SIGN-IN</p>
+                <p>INTRO</p>
+                <li>ABOUT US</li>
+                <li>Branding by Shaun Kim</li>
+                <p>PRODUCT</p>
+                <li>WOOD</li>
+                <li>FABRIC</li>
+                <li>STEAL</li>
+                <li>CANDEL</li>
+                <li>LIGHT</li>
+                <li>Etc..</li>
+                <p>NOTICE</p>
+                <p>CART</p>
+                <P>COMMUNITY</P>
+                <P>Q&A</P>
+            </nav>
+        </header>
+    </div>
+
+    <!--여기부터 메인 아티클입니다.-->
+    <main>
+        <article>#article</article>
+        <article>#article</article>
+        <article>#article</article>
+        <article>#article</article>
+        <article>#article</article>
+    </main>
+    <!--여기는 꼬리말입니다.-->
+    <footer>
+        <h5>COMPANY INFO</h5>
+        <p>CEO: 김인희</p>
+        <p>E-mail: shaunkim98@gmail.com</p>
+        <p>Cell: 010-xxxx-xxxx</p>
+        <p>Address: 경기도</p>
+        <p>Business License</p>
+        <p>Copyright all right reserved/ design by Shaun Kim</p>
+    </footer>
+</div>
+</body>
+</html>
