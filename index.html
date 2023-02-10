@@ -4,69 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>노아</title>
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1">      viewport 반응형웹-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--    viewport 반응형웹-->
     <link rel="stylesheet" href="https://use.typekit.net/dzy0ihr.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Homemade+Apple&family=Julius+Sans+One&display=swap"
-        rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
 </head>
 <style>
     /*레이아웃을 구성합니다.*/
+    body {
+        width: fit-content;
+        margin: auto;
+    }
 
     header {
-        margin-top: 30px;
         display: grid;
-        grid-template-columns: 300px 540px;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        gap: 10px;
+        grid-template-columns: 250px 1fr;
     }
 
-    header > #logo {
-        width: 180px;
-        background-color: cornflowerblue;
-    }
-
-    header > nav {
-        /* margin-left: 100px; */
-        color: gray;
-        font-weight: bold;
-        font-size: small;
-
+    header>nav {
         display: grid;
-        grid-template-columns: repeat(3, 180px);
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-
-
-        /* font-family: 'NanumBarunGothicExtraLight'; */
-        /* font-family: 'NanumSquareLight'; */
-        font-family: 'NanumGothicLight';
-        /* font-family: Arial, sans-serif; */
-        /* font-family: 'Julius Sans One', sans-serif; */
-        /* font-family: 'Cinzel', serif; */
-        /* background-color: lightpink; */
-    }
-
-    li {
-        padding: 0px 0px 9px 9px;
-
-    }
-
-    ul {
-        margin-top: 35px;
-
-    }
-
-    ul, a {
-        list-style-type: none;
-        text-decoration: none;
+        grid-template-columns: repeat(3, 200px);
+        background-color: lightpink;
     }
 
 
@@ -74,94 +30,71 @@
         background-color: lightblue;
         display: grid;
         grid-template-columns: repeat(2, 450px);
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        gap: 10px;
-        margin-top: 10px;
     }
 
-    main > article {
-        border: 2px solid red;
-        display: inline-block;
-        width: 434px;
+    main>article {
+        border: 2px solid lightgray;
+        /* width: 300px; */
         height: 300px;
-        
-    }
-
-
-    a:visited {
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: default;
-        background-color: transparent;
-        text-decoration: none;
     }
 
     footer {
-        /* background-color: yellow; */
+        background-color: yellow;
         text-align: center;
-        font-family: 'NanumGothic';
     }
-
-    footer>p {
+    footer > p {
         border-top: 1px solid lightgray;
         padding-top: 9px;
     }
-    
-    @media (max-width:400px) {
-        header, main, footer {
-            width: 90%;
-        } 
+    li {
+        padding-top: 9px;
     }
 </style>
 
 <body>
     <!--여기부터 머리말/메뉴입니다.-->
     <header>
-        <a href="" id="logo"><img src="logover5.svg" alt="노아패밀리 로고입니다."></a>
+        <img src="logovol1r2.svg" alt="노아패밀리 로고입니다.">
 
         <nav>
             <ul id="introList">
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">INSTAGRAM</a></li>
-
-            </ul>
-            <ul id="productList">
-                <li><a href="">WOOD</a></li>
-                <li><a href="">FABRIC</a></li>
-                <li><a href="">STEAL</a></li>
-                <li><a href="">CANDEL</a></li>
-                <li><a href="">LIGHT</a></li>
+                <li>ABOUT US</li>
+                <li>INSTAGRAM</li>
+                <li>FACEBOOK</li>
             </ul>
             <ul id="membershipList">
-                <li><a href="">SIGN-IN</a></li>
-                <li><a href="">MY ACCOUNT</a></li>
-                <li><a href="">ORDER TRACKING</a></li>
+                <li>SIGN-IN</li>
+                <li>MY ACCOUNT</li>
+                <li>REGISTER</li>
+                <li>ORDER TRACKING</li>
+            </ul>
+            <ul id="productList">
+                <li>from WOOD</li>
+                <li>from FABRIC</li>
+                <li>from STEAL</li>
+                <li>CANDEL</li>
+                <li>LIGHT</li>
             </ul>
             <ul id="csList">
-                <li><a href="">NOTICE</a></li>
-                <li><a href="">Q&A</a></li>
+                <li>NOTICE</li>
+                <li>COMMUNITY</li>
+                <li>Q&A</li>
             </ul>
-            <ul id="shopist">
-                <li><a href="">CART</a>
-                <li><a href="">WATCHED</a></li>
+            <ul>
+                <li>cart</li>
+                <li>I've watched</li>
             </ul>
         </nav>
+        <p>Branding by Shaun Kim</p>
     </header>
     <!--여기부터 메인 아티클입니다.-->
     <main>
-        <article style="background-image:url(chicken1.jpg); background-position:center; background-size:contain">닭</article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
+        <article>#a card</article>
     </main>
     <!--여기는 꼬리말입니다.-->
     <footer>
