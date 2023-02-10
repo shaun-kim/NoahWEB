@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <title>노아</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/dzy0ihr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Homemade+Apple&family=Julius+Sans+One&display=swap"
+        rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+</head>
+<style>
+    /*레이아웃을 구성합니다.*/
+    #header, main, footer {
+        width: 910px;
+        margin: auto;
+    }
+    #header {       
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap: 10px; 
+        background-color: lightyellow;
+        
+    }
+
+    #logo {
+        display: inline-block;
+        width: 180px;
+        background-color: cornflowerblue;
+    }
+
+    #menuWrap {
+        color: gray;
+        font-weight: bold;
+        font-size: small;
+        background-color: rgb(233, 163, 243);
+        
+        /* margin-left: 100px; */
+        display: grid;
+        grid-template-columns: repeat(3, 180px);
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-left: 180px;
+
+        font-family: 'NanumGothicLight';
+
+        /* font-family: 'NanumBarunGothicExtraLight'; */
+        /* font-family: 'NanumSquareLight'; */
+        /* font-family: Arial, sans-serif; */
+        /* font-family: 'Julius Sans One', sans-serif; */
+        /* font-family: 'Cinzel', serif; */
+        /* background-color: lightpink; */
+    }
+
+    li {
+        padding: 0px 0px 9px 9px;
+
+    }
+
+    ul {
+        margin-top: 35px;
+
+    }
+
+    ul, a {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+
+    main {
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        margin-top: 10px;
+
+    }
+
+    main > article {
+        border: 2px solid red;
+        display: inline-block;
+        width: 434px;
+        height: 300px;
+        
+    }
+
+
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: default;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    footer {
+        /* background-color: yellow; */
+        text-align: center;
+        font-family: 'NanumGothic';
+    }
+
+    footer > p {
+        border-top: 1px solid lightgray;
+        padding-top: 9px;
+    }
+    
+    /* @media (max-width:400px) {} */
+    
+</style>
+
+<body>
+    <!--여기부터 머리말/메뉴입니다.-->
+    <div id="header">
+        <div id="logo"><a href="" ><img src="logover5.svg" alt="노아패밀리 로고입니다."></a></div>
+        <div id="menuWrap">
+            <ul id="introList">
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">INSTAGRAM</a></li>
+
+            </ul>
+            <ul id="productList">
+                <li><a href="">WOOD</a></li>
+                <li><a href="">FABRIC</a></li>
+                <li><a href="">STEAL</a></li>
+                <li><a href="">CANDEL</a></li>
+                <li><a href="">LIGHT</a></li>
+            </ul>
+            <ul id="membershipList">
+                <li><a href="">SIGN-IN</a></li>
+                <li><a href="">MY ACCOUNT</a></li>
+                <li><a href="">ORDER TRACKING</a></li>
+            </ul>
+            <ul id="csList">
+                <li><a href="">NOTICE</a></li>
+                <li><a href="">Q&A</a></li>
+            </ul>
+            <ul id="shopist">
+                <li><a href="">CART</a>
+                <li><a href="">WATCHED</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--여기부터 메인 아티클입니다.-->
+    <main>
+        <article style="background-image:url(chicken1.jpg); background-position:center; background-size:contain"></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+    </main>
+    <!--여기는 꼬리말입니다.-->
+    <footer>
+        <ul id="businessInfo">
+            <li>COMPANY INFO</li>
+            <li>CEO: 김인희</li>
+            <li>E-mail: shaunkim98@gmail.com</li>
+            <li>Cell: 010-xxxx-xxxx</li>
+            <li>Address: 경기도</li>
+            <li>Business License</li>
+            <li>Copyright all right reserved/ design by Shaun Kim</li>
+        </ul>
+        <p>2023 Noah Family Online Gift Shop For You</p>
+    </footer>
+</body>
+
+</html>
